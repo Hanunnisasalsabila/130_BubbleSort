@@ -25,3 +25,20 @@ void input() {          // procedur untuk input
         cin >> a[i];                    // Input dari pengguna
     }
 }
+void bubbleSortArray() {    // procedur untuk mengurutkan array dengan metode bubble sort
+    int pass = 1; // step 1
+
+    do {
+        for (int j = 0; j <= n - 1 - pass; j++) { // step 2
+
+            if (a[j] > a[j + 1]) { // step 3
+                int temp;
+                temp = a[j];
+                a[j] = a[j + 1];
+                a[j = 1] = temp;
+            }
+        }
+        pass = pass + 1; //step 4
+
+    } while (pass <= n - 1); // step 5
+}
