@@ -55,3 +55,13 @@ void display() {
     cout << "Jumlah pass =" << n - 1 << endl; // Correctly shows the total number of elements
     cout << endl;
 }
+
+int main() {
+
+    input();    // Memanggil procedur input()
+    bubbleSortArray(); // Mengurutkan data dengan algoritma bubble sort
+    display(); // Memanggil procedur display()
+    system("pause");
+
+    return 0;
+}
